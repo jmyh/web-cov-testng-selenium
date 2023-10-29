@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Debug selenide coverage" verbose="1">
+    <test name="Test login">
+        <classes><class name="selenide.TestLogin" /></classes>
+    </test>
+
+    <test name="Test add items to cart">
+        <classes><class name="selenide.TestAddToCart" /></classes>
+    </test>
+</suite>
