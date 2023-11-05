@@ -14,9 +14,9 @@ public class WebCovTestNGListener implements ITestListener {
     private static final Coordinator coordinator = Coordinator.getInstance();
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("On test start: '"+result.getMethod().getDescription()+"'");
+        logger.debug("On test start: '"+result.getMethod().getDescription()+"'");
         coordinator.setTestInfo(new TestInfo(result.id(), result.getMethod().getDescription()));
-        System.out.println("ID: "+result.id());
+        logger.debug("ID: "+result.id());
     }
 
 }
